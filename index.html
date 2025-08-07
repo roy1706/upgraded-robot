@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo de Frases - Inspiración en cada palabra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+<meta name="description" content="Descubre cientos de frases inspiradoras sobre amor, amistad, motivación y sabiduría. Frases célebres de autores famosos para reflexionar, compartir o dedicar. ¡Encuentra la frase perfecta para cada momento!">
+<meta name="keywords" content="frases de amor, frases de amistad, frases motivadoras, frases sabias, frases célebres, citas famosas, reflexiones cortas, pensamientos profundos, palabras inspiradoras, frases para compartir">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Mundo de Frases - Inspiración en cada palabra">
+<meta property="og:description" content="Colección de frases para iluminar tu día. Amor, amistad, motivación y más.">
+<meta property="og:image" content="https://roy1706.github.io/assets/images/portada.jpg">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header class="animate__animated animate__fadeInDown">
+        <h1>Mundo de Frases</h1>
+        <p>Inspiración en cada palabra</p>
+    </header>
+
+    <main>
+        <div class="controls animate__animated animate__fadeIn">
+            <div class="category-selector">
+                <button class="category-btn" data-category="amor">Amor</button>
+                <button class="category-btn" data-category="tristeza">Tristeza</button>
+                <button class="category-btn" data-category="motivacion">Motivación</button>
+                <button class="category-btn" data-category="sabiduria">Sabiduría</button>
+                <button class="category-btn" data-category="amistad">Amistad</button>
+            </div>
+            
+            <button id="random-btn" class="animate__animated animate__pulse animate__infinite">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 3 21 3 21 8"></polyline>
+                    <line x1="4" y1="20" x2="21" y2="3"></line>
+                    <polyline points="21 16 21 21 16 21"></polyline>
+                    <line x1="15" y1="15" x2="21" y2="21"></line>
+                    <line x1="4" y1="4" x2="9" y2="9"></line>
+                </svg>
+                Frase Aleatoria
+            </button>
+        </div>
+
+        <div class="quote-container animate__animated animate__fadeIn">
+            <div class="quote-box">
+                <p id="quote-text" class="quote-text">Cargando frase inspiradora...</p>
+                <p id="quote-author" class="quote-author"></p>
+            </div>
+            
+            <div class="quote-actions">
+                <button id="next-btn">Siguiente Frase</button>
+                <button id="share-btn">Compartir</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="animate__animated animate__fadeInUp">
+        <p>© 2025 Mundo de Frases | Todas las frases son de dominio público o atribuidas correctamente</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
